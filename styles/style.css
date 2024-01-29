@@ -1,0 +1,330 @@
+@font-face {
+    font-family: 'Corporate-A-Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Corporate-A-Bold.woff2') format('woff2'),
+         url('../fonts/Corporate-A-Bold.woff') format('woff1');
+}
+
+
+.page {
+    font-family: Roboto Condensed;
+    font-style: normal;
+    background: linear-gradient(180deg, #070A1B 0%, #2A3170 100%);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/*------------------------Header------------------- */
+.header {
+    height: 100vh;
+}
+
+.header__top{ 
+    height: 100px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    margin-left: 115px;
+}
+.header__button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.list__link {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color .3s;
+}
+
+.list__item{
+    margin-right: 30px;
+}
+
+.list__link:hover{
+    background-color: #C1A1D2;
+}
+
+.list__item:last-of-type{
+    margin-right: 0px;
+}
+
+.header__content {
+    height: calc(100vh - 100px);
+    background-image: url(../images/car.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.header__content::before {
+    content: "";
+    background-image: url(../images/mercedes-logo.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+}
+
+
+.header__title{
+    margin: 0 0 5px;
+    color: #fff;
+    font-family: 'Corporate-A-Bold';
+    font-size: 72px;
+    line-height: 120%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__subtitle{
+    margin: 0 0 50px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 120%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*------------------------Header-END--------------- */
+
+/*------------------------Concept-------------------*/
+.main__concept {
+    margin: 150px 0;
+}
+
+.concept__inner {
+    max-width: 900px;
+    margin-left: auto;
+}
+
+.section-title {
+    font-family: 'Corporate-A-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    margin: 0 0 25px;
+    text-transform: uppercase;
+    color: #F402A2;
+}
+
+.section-subtitle {
+    color: #fff;
+    font-size: 16px;
+    line-height: 120%;
+    margin: 0 0 21px;
+
+}
+
+.concept__img {
+    object-fit: cover;
+}
+/*------------------------Concept-END---------------*/
+
+
+/*------------------------Premier-------------------*/
+.main__premier{
+    margin-bottom: 150px;
+}
+.premier__inner {
+   display: flex;
+   justify-content: space-between;
+   gap: 60px;
+}
+
+.premier__img {
+    margin-bottom: 25px ;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: inherit;
+    font-family: 'Corporate-A-Bold';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #F402A2;
+    border: 1px solid #F402A2;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.button:hover {
+    color: #53A1CB;
+    border: 1px solid #53A1CB;
+}
+/*------------------------Premier-END---------------*/
+
+/*------------------------Video---------------------*/
+.video {
+    margin-bottom: 150px;
+}
+
+.video__img {
+    margin-bottom: 25px;
+}
+
+.button_place_video {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button_place_video span {
+    padding-top: 2px;
+}
+
+.button_place_video path{
+    transition: all .3s;
+}
+
+.button_place_video:hover path{
+    fill: #53A1CB;
+}
+/*------------------------Video-END-----------------*/
+
+/*------------------------Design--------------------*/
+.design__intertior {
+    display: grid;
+    grid-template-columns: 255px 255px auto 330px;
+    grid-template-rows: auto auto;
+    gap: 14px 44px;
+    margin-bottom: 100px;
+}
+
+.design__cell-one {
+    grid-row: 1/3;
+}
+
+.design__cell-two {
+    grid-row-end: -1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.design__cell-three {
+    grid-column-end: -1;
+    grid-row-end: -1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.design__paragraph {
+    color: #fff;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.design__paragraph:last-of-type {
+    margin:0
+}
+/*------------------------Design-END----------------*/
+
+
+/*------------------------Slider--------------------*/
+.design-slider {
+    display: flex;
+    overflow: hidden;
+    margin-left: -60px;
+}
+
+.design-slider__item {
+    margin: 0 30px 0 0;
+}
+/*------------------------Slider-END----------------*/
+
+
+/*------------------------INFO----------------------*/
+
+.info {
+    display: flex;
+    justify-content: center;
+    margin: 150px 0;
+}
+
+.two-columns {
+    max-width: 570px;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.column {
+    width: 255px;
+}
+
+.main-text {
+    color: #fff;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+/*------------------------INFO-END------------------*/
+
+.Side-img {
+    width: 100%;
+    display: block;
+}
+
+/*------------------------Footer------------------- */
+
+.footer {
+    background-color: #070A1B;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+/*------------------------Footer-END--------------- */
